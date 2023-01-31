@@ -90,27 +90,3 @@ func SendICMPRequest(icmp ICMP, destAddr *net.IPAddr) error {
 
 	return err
 }
-
-////  package main  才可以go build   ||    go run
-
-// func main() {
-// 	// if len(os.Args) < 2 {
-// 	// 	usage()
-// 	// }
-
-// 	host := os.Args[1]
-// 	raddr, err := net.ResolveIPAddr("ip", host)
-// 	if err != nil {
-// 		fmt.Printf("Fail to resolve %s, %s\n", host, err)
-// 		return
-// 	}
-
-// 	fmt.Printf("Ping %s (%s):\n\n", raddr.String(), host)
-
-// 	for i := 1; i < 6; i++ {
-// 		if err = SendICMPRequest(GetICMP(uint16(i)), raddr); err != nil {
-// 			fmt.Printf("Error: %s\n", err)
-// 		}
-// 		time.Sleep(2 * time.Second)
-// 	}
-// }
