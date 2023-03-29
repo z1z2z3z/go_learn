@@ -19,7 +19,4 @@ sync.RWMutex 用于读锁和写锁分开的情况。使用时注意如下几点�
 （3）写锁会阻止其他 goroutine（无论读和写）进来，整个锁由该 goroutine 独占；
 （4）适用于读多写少的场景。
 
-
 [参考链接](https://blog.csdn.net/K346K346/article/details/90476721)
-
-
